@@ -4,8 +4,7 @@ pub mod calendar {
 
 pub struct Config {
     pub day_number: u32,
-    pub part_1_input_path: String,
-    pub part_2_input_path: String,
+    pub input_path: String,
 }
 
 impl Config {
@@ -23,9 +22,8 @@ impl Config {
             return Err("please provide day in range 1..25");
         }
         
-        let part_1_input_path = format!("calendar_inputs/day_{day_number}/input-part1.txt");
-        let part_2_input_path = format!("calendar_inputs/day_{day_number}/input-part2.txt");
+        let input_path = format!("calendar_inputs/d{day_number}.txt");
 
-        Ok(Config { day_number, part_1_input_path, part_2_input_path })
+        Ok(Config { day_number, input_path })
     }
 }
