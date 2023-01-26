@@ -1,5 +1,6 @@
 pub mod calendar {
     pub mod day_1;
+    pub mod day_2;
 }
 
 pub struct Config {

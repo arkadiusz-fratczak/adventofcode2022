@@ -12,6 +12,7 @@ fn main() {
     
     match config.day_number {
         1 => calendar::day_1::run(config),
+        2 => calendar::day_2::run(config),
         d => {
             eprintln!("Not implemented yet for day: {d}");
             process::exit(1);
