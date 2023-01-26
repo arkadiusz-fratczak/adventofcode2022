@@ -73,7 +73,9 @@ mod tests {
 8000
 9000
 
-10000";
+10000
+
+";
 
         assert_eq!(24000, top_elf(puzzle_input));
     }
@@ -94,7 +96,9 @@ mod tests {
 8000
 9000
 
-10000";
+10000
+
+";
 
         assert_eq!(45000, top_three_elves(puzzle_input));
     }
