@@ -14,6 +14,7 @@ fn main() {
         1 => calendar::day_1::run(config),
         2 => calendar::day_2::run(config),
         3 => calendar::day_3::run(config),
+        4 => calendar::day_4::run(config),
         d => {
             eprintln!("Not implemented yet for day: {d}");
             process::exit(1);
